@@ -1,0 +1,22 @@
+<header class="header" id="header">
+    <div class="logo">
+        <a href="/">
+            <img src="%=static=%img/assets/header/{{logo.img}}" alt="{{logo.title}}"/>
+            <span class="logo_text">{{logo.title}}</span>
+        </a>
+    </div>
+    <div class="menu">
+        <div class="menu_mobile"><span></span><span></span><span></span></div>
+        <ul class="menu_list">
+            {{#each menu}}
+            {{#if action}}
+            <li class="item"><a class="item_a" href="{{url}}">{{title}}</a></li>
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+    <div class="title_wrap">
+        <h1>{{{title}}}</h1>
+        <p>{{{desc}}}</p>
+    </div>
+</header>

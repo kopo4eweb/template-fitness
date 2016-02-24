@@ -1,0 +1,31 @@
+<aside class="article">
+    <div class="container">
+        <div class="row">
+
+                <div class="col-md-7 text_wrap">
+                    <div class="sub-title">{{first.sub_title}}</div>
+                    <h2>{{first.title}}</h2>
+                    <div class="drop"><img src="%=static=%img/assets/article/drop.png" alt="drop"/></div>
+                    <p class="text">{{{first.text}}}</p>
+                    <a class="link" href="{{first.url}}">{{first.text_url}}</a>
+                </div>
+                <div class="col-md-13 img_wrap">
+                    <img class="article_img mediaImg" src="%=static=%img/general/blank.gif" alt="{{first.title}}" data-img='{{json first.img}}' data-img_url="%=static=%{{first.img_url}}"/>
+                    <div class="desc desc-right desc-action"><div class="desc_wrap">{{{first.desc_img}}}</div> <img src="%=static=%img/assets/article/drop-red.png" alt="drop-red"/></div>
+                </div>
+
+                <div class="col-md-7 text_wrap text_wrap-right">
+                    <div class="sub-title">{{second.sub_title}}</div>
+                    <h2>{{second.title}}</h2>
+                    <div class="drop"><img src="%=static=%img/assets/article/drop.png" alt="drop"/></div>
+                    <p class="text">{{{second.text}}}</p>
+                    <a class="link" href="{{second.url}}">{{second.text_url}}</a>
+                </div>
+                <div class="col-md-13 img_wrap">
+                    <img class="article_img mediaImg" src="%=static=%img/general/blank.gif" alt="{{second.title}}" data-img='{{json second.img}}' data-img_url="%=static=%{{second.img_url}}"/>
+                    <div class="desc desc-left"><div class="desc_wrap">{{{second.desc_img}}}</div> <img src="%=static=%img/assets/article/drop-red.png" alt="drop-red"/></div>
+                </div>
+
+        </div>
+    </div>
+</aside>

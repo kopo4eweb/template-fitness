@@ -1,0 +1,34 @@
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 padding-left-0">
+                <div class="title">{{resource.title}}</div>
+                <div class="text">{{resource.text}}</div>
+            </div>
+            <div class="col-md-8">
+                <div class="title">{{about.title}}</div>
+                <div class="text">{{about.text}}</div>
+            </div>
+            <div class="col-md-5">
+                <div class="title">{{social.title}}</div>
+                <ul class="social_list">
+                   {{#each social.social_item}}
+                    {{#if action}}
+                    <li class="item"><a href="{{url}}"><img src="%=static=%img/assets/footer/{{img}}" alt="{{icon}}"/></a></li>
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7"></div>
+            <div class="col-md-13">
+                <form class="contact_form">
+                    <input type="text" class="contact_input contact_name" placeholder="{{contact_form.input_name}}"/>
+                    <input type="email" class="contact_input contact_email" placeholder="{{contact_form.input_email}}"/>
+                    <button type="submit" class="contact_submit">{{contact_form.button}} <img src="%=static=%img/assets/footer/{{contact_form.button_icon}}" alt="{{contact_form.button}}"/></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

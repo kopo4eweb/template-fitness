@@ -1,0 +1,52 @@
+/* Your custom fonts here */
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/BebasNeue/BebasNeue-Regular.eot');
+    src: url('../fonts/BebasNeue/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeue/BebasNeue-Regular.woff') format('woff'),
+    url('../fonts/BebasNeue/BebasNeue-Regular.svg#custom_font') format('svg');
+    font-weight: normal;       // For normal width. It could has another value
+    font-style: normal;     // Also could has another value
+}
+// Var for using custom font
+$BebasNeueRegular: 'BebasNeueRegular', Helvetica, Arial, sans-serif;
+
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../fonts/OpenSans/OpenSans-Regular.eot');
+    src: url('../fonts/OpenSans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/OpenSans/OpenSans-Regular.svg#custom_font') format('svg');
+    font-weight: normal;       // For normal width. It could has another value
+    font-style: normal;     // Also could has another value
+}
+// Var for using custom font
+$OpenSansRegular: 'Open Sans Regular', Helvetica, Arial, sans-serif;
+
+
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url('../fonts/OpenSans/OpenSans-Semibold.eot');
+    src: url('../fonts/OpenSans/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans/OpenSans-Semibold.woff') format('woff'),
+    url('../fonts/OpenSans/OpenSans-Semibold.svg#custom_font') format('svg');
+    font-weight: normal;       // For normal width. It could has another value
+    font-style: normal;     // Also could has another value
+}
+// Var for using custom font
+$OpenSansSemibold: 'Open Sans Semibold', Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/OpenSans/OpenSans-Light.eot');
+    src: url('../fonts/OpenSans/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans/OpenSans-Light.woff') format('woff'),
+    url('../fonts/OpenSans/OpenSans-Light.svg#custom_font') format('svg');
+    font-weight: normal;       // For normal width. It could has another value
+    font-style: normal;     // Also could has another value
+}
+// Var for using custom font
+$OpenSansLight: 'Open Sans Light', Helvetica, Arial, sans-serif;
+

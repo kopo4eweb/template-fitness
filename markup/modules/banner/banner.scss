@@ -1,0 +1,58 @@
+.banner {
+    background-image: url('%=static=%assets/banner/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 725px;
+    min-height: 320px;
+    color: $banner_color;
+    padding-top: 230px;
+    text-align: center;
+    font-family: $OpenSansRegular;
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -110px;
+        left: 0;
+        right: 0;
+        height: 182px;
+        width: 100%;
+        background-image: url('%=static=%assets/banner/footer-mask-2.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        z-index: 1;
+    }
+
+    h2 {
+        font-size: 45px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        z-index: 5;
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        z-index: 5;
+    }
+}
+@media only screen and (max-width : 767px) {
+    .banner {
+        padding-top: 130px;
+        h2 {
+            font-size: 38px;
+        }
+    }
+}
+@media only screen and (max-width : 480px) {
+    .banner {
+        padding-top: 90px;
+
+        h2 {
+            font-size: 32px;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.benefit {
+    background-color: $benefit_bg_color;
+    padding-top: 107px;
+    padding-bottom: 75px;
+    color: $benefit_color;
+    font-family: $OpenSansRegular;
+
+    .col-md-5:first-child {
+        padding-left: 0;
+    }
+    .col-md-5:last-child {
+        padding-right: 0;
+    }
+
+    .benefit_wrap {
+        min-height: 250px;
+        position: relative;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        .img_wrap {
+            height: 47px;
+            position: relative;
+            img {
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto 0;
+            }
+        }
+
+        h2 {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            padding: 0;
+            line-height: 1;
+            font-size: 24px;
+            font-weight: normal;
+        }
+        p {
+            font-size: 13px;
+            line-height: 1.7;
+        }
+        a {
+            display: block;
+            font-size: 13px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: $benefit_link_color;
+        }
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .benefit {
+        padding-top: 97px;
+        padding-bottom: 65px;
+
+        .col-md-5:first-child {
+            padding-left: 10px;
+        }
+        .col-md-5:last-child {
+            padding-right: 10px;
+        }
+
+        .benefit_wrap {
+            min-height: 100%;
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media only screen and (max-width : 480px) {
+    .benefit {
+        padding-top: 77px;
+        padding-bottom: 45px;
+    }
+}

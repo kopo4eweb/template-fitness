@@ -1,0 +1,18 @@
+<aside class="benefit">
+    <div class="container">
+        <div class="row">
+            {{#each item}}
+            <div class="col-md-5 col-sm-10">
+                <article class="benefit_wrap">
+                    <div class="img_wrap">
+                        <img src="%=static=%img/assets/benefit/{{img}}" alt="{{title}}"/>
+                    </div>
+                    <h2>{{title}}</h2>
+                    <p>{{text}}</p>
+                    <a href="{{url}}">{{text_url}}</a>
+                </article>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</aside>

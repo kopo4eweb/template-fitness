@@ -1,0 +1,91 @@
+.footer {
+    background-color: $footer_bg_color;
+    color: $footer_color;
+    min-height: 760px;
+    padding-top: 175px;
+
+    .padding-left-0 {
+        padding-left: 0;
+    }
+
+    .title {
+        font-family: $OpenSansRegular;
+        font-size: 15px;
+    }
+    .text {
+        font-family: $OpenSansRegular;
+        font-size: 14px;
+        color: $footer_text_color;
+        padding-top: 20px;
+    }
+
+    .social_list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .item {
+            width: 51px;
+            height: 51px;
+            display: inline-block;
+            margin-top: 20px;
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+    }
+    .contact_form {
+        font-size: 14px;
+        padding-bottom: 30px;
+
+        .contact_input {
+            border-radius: 3px;
+            border: none;
+            height: 50px;
+            padding-left: 20px;
+            color: $footer_contact_input_color;
+            margin-top: 25px;
+        }
+        .contact_name {
+            width: 200px;
+        }
+        .contact_email {
+            width: 340px;
+        }
+        .contact_submit {
+            margin-top: 25px;
+            width: 180px;
+            height: 50px;
+            border-radius: 3px;
+            color: $footer_contact_submit_color;
+            background-color: $footer_contact_submit_bg_color;
+            border: 1px solid $footer_contact_submit_border_color;
+            font-size: 15px;
+            &:hover {
+                background-color: $footer_contact_submit_hover_bg_color;
+            }
+        }
+    }
+}
+@media only screen and (max-width : 991px) {
+    .footer {
+        .padding-left-0 {
+            padding-left: 10px;
+        }
+        .text {
+            padding-bottom: 30px;
+        }
+    }
+}
+@media only screen and (max-width : 480px) {
+    .footer {
+        .contact_form {
+            .contact_input {
+                width: 100%;
+            }
+        }
+    }
+}
