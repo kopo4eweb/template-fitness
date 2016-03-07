@@ -43,10 +43,11 @@
 
         .contact_input {
             border-radius: 3px;
-            border: none;
+            //border: none;
             height: 50px;
             padding-left: 20px;
             color: $footer_contact_input_color;
+            border: 1px solid transparent;
             margin-top: 25px;
         }
         .contact_name {
@@ -64,6 +65,7 @@
             background-color: $footer_contact_submit_bg_color;
             border: 1px solid $footer_contact_submit_border_color;
             font-size: 15px;
+
             &:hover {
                 background-color: $footer_contact_submit_hover_bg_color;
             }
